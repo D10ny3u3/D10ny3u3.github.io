@@ -7,10 +7,6 @@ order: 4
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip }
 
-# About Me
-
-I am **Kai Yan**, a researcher interested in computational biology and biomedical research.
-
 ## Research Interests
 
 * Single-cell RNA sequencing
@@ -22,8 +18,6 @@ I am **Kai Yan**, a researcher interested in computational biology and biomedica
 ## Academic Information
 
 **ORCID:** [0009-0000-6760-2223]
-**Email:** [dryankai@tongji.edu.cn]
-**Affiliation:** [Tongji University]
 
 ## Research & Code
 
@@ -53,5 +47,3 @@ The website is intended to document not only completed research, but also the pr
 For academic discussion, collaboration, or questions regarding the materials on this website, please contact me by email.
 
 **Email:** [739376536@qq.com]
-
-**ORCID:** [0009-0000-6760-2223]

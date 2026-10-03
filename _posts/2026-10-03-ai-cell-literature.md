@@ -75,7 +75,7 @@ for cellular and tissue biology.
 
 ## Single-cell Analysis
 
-- [The future of rapid and automated single-cell data analysis using reference mapping]([https://doi.org/xxxxx](https://www.cell.com/cell/fulltext/S0092-8674(24)00301-5) — 随着单细胞数据集数量的快速增长，将新数据映射到精心整理的参考图谱的工作流程为生物学界带来了巨大的希望。本文将探讨单细胞参考图谱映射算法面临的关键计算挑战和机遇。我们将讨论映射算法如何能够整合跨越疾病状态、分子模式、遗传扰动和不同物种的各种数据集，并最终取代繁琐的人工无监督聚类流程。
+- [The future of rapid and automated single-cell data analysis using reference mapping](https://www.cell.com/cell/fulltext/S0092-8674(24)00301-5) — 随着单细胞数据集数量的快速增长，将新数据映射到精心整理的参考图谱的工作流程为生物学界带来了巨大的希望。本文将探讨单细胞参考图谱映射算法面临的关键计算挑战和机遇。我们将讨论映射算法如何能够整合跨越疾病状态、分子模式、遗传扰动和不同物种的各种数据集，并最终取代繁琐的人工无监督聚类流程。
 
 ## Spatial Biology (Digest TME)
 

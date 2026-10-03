@@ -1,7 +1,10 @@
 ---
 title: AI Cell Literature
-icon: fas fa-book-open
-order: 2
+date: 2026-10-03
+categories:
+  - AI Cell Literature
+tags:
+  - literature
 ---
 
 # AI Cell Literature

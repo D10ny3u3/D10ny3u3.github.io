@@ -14,8 +14,7 @@ CYT（cytolytic activity score，细胞溶解活性评分）主要用于评估�
 ## 1. CYT score 的计算公式
 
 $$
-\mathrm{CYT}_i =
-\sqrt{\mathrm{GZMA}_i \times \mathrm{PRF1}_i}
+\mathrm{CYT}_i = \left(\mathrm{GZMA}_i \cdot \mathrm{PRF1}_i\right)^{1/2}
 $$
 
 其中，GZMA 和 PRF1 为同一样本中这两个基因的表达量。

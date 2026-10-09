@@ -113,7 +113,7 @@ teff_score <- apply(teff_z, 2, median, na.rm = TRUE)
 
 | 评分                                | 计算方法                                           |
 | --------------------------------- | ---------------------------------------------- |
-| Expanded immune 18-gene signature | 对标准化后、经 log⁡10\log\_{10}log10 转换的 18 个基因表达值取平均 |
+| Expanded immune 18-gene signature | 对标准化后、经 $\log_{10}$ 转换的 18 个基因表达值取平均 |
 | 最终 T cell–inflamed GEP            | 对 18 个基因的 housekeeping-normalized 表达值进行加权求和    |
 
 T cell–inflamed GEP score 指第二种，即最终的加权评分。原文 Methods 明确说明，权重来自 elastic net 惩罚 Logistic 回归的最终回归系数。

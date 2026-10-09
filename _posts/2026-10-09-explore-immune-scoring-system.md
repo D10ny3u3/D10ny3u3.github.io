@@ -109,8 +109,6 @@ teff_score <- apply(teff_z, 2, median, na.rm = TRUE)
 
 最重要的一点是：原始 T cell–inflamed GEP 并不是简单统计 T 细胞标志基因的表达量，而是利用 18 个基因的表达构建多基因评分。 原文使用惩罚 Logistic 回归确定基因权重，并描述了用于计算签名分数的表达数据标准化流程。
 
-## 1. 原文的计算方法
-
 需要区分两种容易混淆的评分：
 
 | 评分                                | 计算方法                                           |
@@ -120,15 +118,11 @@ teff_score <- apply(teff_z, 2, median, na.rm = TRUE)
 
 T cell–inflamed GEP score 指第二种，即最终的加权评分。原文 Methods 明确说明，权重来自 elastic net 惩罚 Logistic 回归的最终回归系数。
 
-### 具体计算步骤
+## 1 获取 18 个基因的表达量
 
-## 1
+原研究使用 NanoString nCounter 对肿瘤组织的 RNA 进行检测。
 
-获取 18 个基因的表达量。原研究使用 NanoString nCounter 对肿瘤组织的 RNA 进行检测。
-
-## 2
-
-Housekeeping normalization
+## 2 Housekeeping normalization
 
 对每个基因的表达计数取 $\log_{10}$，再减去该样本 11 个 housekeeping genes 的平均 $\log_{10}$ 表达值：
 
@@ -142,9 +136,7 @@ $$
 
 其中，$C_{ig}$ 是样本 $i$ 中基因 $g$ 的表达计数，$C_{ih}$ 是样本 $i$ 中第 $h$ 个 housekeeping gene 的表达计数。
 
-## 3
-
-加权求和，得到最终 GEP score
+## 3 加权求和，得到最终 GEP score
 
 $$
 \mathrm{GEP}_i = \sum_{g=1}^{18} w_g X_{g,i}

@@ -13,7 +13,10 @@ CYT（cytolytic activity score，细胞溶解活性评分）主要用于评估�
 
 ## 1. CYT score 的计算公式
 
-CYT=GZMA×PRF1\mathrm{CYT}=\sqrt{\mathrm{GZMA}\times\mathrm{PRF1}}CYT=GZMA×PRF1
+$$
+\mathrm{CYT}_i =
+\sqrt{\mathrm{GZMA}_i \times \mathrm{PRF1}_i}
+$$
 
 其中，GZMA 和 PRF1 为同一样本中这两个基因的表达量。
 
@@ -79,9 +82,18 @@ IMmotion150 的 Teff signature 包含 5 个基因[https://jitc.bmj.com/content/1
 
 公式为：
 
-Teffi=median⁡(ZCD8A,i,ZEOMES,i,ZPRF1,i,ZIFNG,i,ZCD274,i)\mathrm{Teff}_i = \operatorname{median}\left( Z_{CD8A,i}, Z_{EOMES,i}, Z_{PRF1,i}, Z_{IFNG,i}, Z_{CD274,i} \right)Teffi=median(ZCD8A,i,ZEOMES,i,ZPRF1,i,ZIFNG,i,ZCD274,i)
+$$
+\mathrm{Teff}_i =
+\operatorname{median}\left(
+Z_{\mathrm{CD8A},i},
+Z_{\mathrm{EOMES},i},
+Z_{\mathrm{PRF1},i},
+Z_{\mathrm{IFNG},i},
+Z_{\mathrm{CD274},i}
+\right)
+$$
 
-其中，Zg,iZ_{g,i}Zg,i 表示基因 ggg 在样本 iii 中标准化后的表达值。
+其中，$Z_{g,i}$ 表示基因 $g$ 在样本 $i$ 中标准化后的表达值。
 
 注意： 这类评分依赖具体的表达预处理和标准化方式。若要严格复现原始论文，需要进一步核实原始 Methods 或补充材料中的表达预处理细节，不能仅凭公式认定不同数据平台可以直接比较绝对分值。
 
@@ -137,9 +149,11 @@ Xig=log⁡10(Cig)−111∑h=111log⁡10(Cih)X_{ig}=\log_{10}(C_{ig})- \frac{1}{1
 
 加权求和，得到最终 GEP score
 
-GEPi=∑g=118wgXig\mathrm{GEP}_i=\sum_{g=1}^{18}w_gX_{ig}GEPi=g=1∑18wgXig
+$$
+\mathrm{GEP}_i = \sum_{g=1}^{18} w_g X_{g,i}
+$$
 
-wgw_gwg 为原研究训练得到的回归系数。原文使用 5-fold cross-validation 选择惩罚参数，并通过多次随机分组确定最终基因集合与权重。
+ $w_g$ 为原研究训练得到的回归系数。原文使用 5-fold cross-validation 选择惩罚参数，并通过多次随机分组确定最终基因集合与权重。
 
 注意：上述公式中，表达计数应使用适合该检测平台的预处理结果；如果表达量为零，不能直接取对数，需要按照数据类型和预处理方案处理。
 

@@ -27,13 +27,7 @@ $$ \mathrm{CYT}_i = \sqrt{\mathrm{GZMA}_i \times \mathrm{PRF1}_i} $$
 
 ## 2. 这篇 JCI 文章具体怎么计算？
 
-[https://www.jci.org/articles/view/124108]在 Methods 中明确写道：使用 PRF1 和 GZMA 的 normalized read counts 的几何平均数 计算 CYT score。
-
-因此，严格按照这篇文章的方法：
-
-CYT=PRF1norm×GZMAnorm\mathrm{CYT}=\sqrt{\mathrm{PRF1}_{norm}\times\mathrm{GZMA}_{norm}}CYT=PRF1norm×GZMAnorm
-
-这里使用的是归一化后的 read counts，而不是直接使用原始 counts，也不是对两个基因分别进行 Z-score 标准化后取平均。
+[https://www.jci.org/articles/view/124108]在 Methods 中明确写道：使用 PRF1 和 GZMA 的 normalized read counts 的几何平均数 计算 CYT score。这里使用的是归一化后的 read counts，而不是直接使用原始 counts，也不是对两个基因分别进行 Z-score 标准化后取平均。
 
 ## 3. R 代码
 

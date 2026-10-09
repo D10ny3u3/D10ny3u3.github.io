@@ -1,6 +1,7 @@
 ---
 title: Explore Immune Scoring Systems
 date: 2026-10-09
+math: true
 categories:
   - Bio-infomatics
 tags:
@@ -144,9 +145,7 @@ $$
 
 目前尚未找到公开的权重数据，退而求其次，按照 immune 18-gene signature 的逻辑进行计算。
 
-```
-{r}
-
+```r
 gep18 <- c(
   "TIGIT", "CD27", "CD8A", "PDCD1LG2",
   "LAG3", "CD274", "CXCR6", "CMKLR1",
@@ -166,6 +165,5 @@ gep_result <- data.frame(
   sample = colnames(gep_expr),
   immune_score = as.numeric(gep_score)
 )
-
 ```
 

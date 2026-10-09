@@ -75,7 +75,7 @@ IMmotion150 的 Teff signature 包含 5 个基因[https://jitc.bmj.com/content/1
 
 $$
 \mathrm{Teff}_i =
-\operatorname{median}\left(
+\mathrm{median}\left(
 Z_{\mathrm{CD8A},i},
 Z_{\mathrm{EOMES},i},
 Z_{\mathrm{PRF1},i},

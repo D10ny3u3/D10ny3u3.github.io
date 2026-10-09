@@ -130,7 +130,7 @@ $$
 X_{ig} = \log_{10}(C_{ig}) - \frac{1}{11}\sum_{h=1}^{11}\log_{10}(C_{ih})
 $$
 
-其中， $C_{ig}$ 是样本 $i$ 中基因 $g$ 的表达计数，$C_{ih}$ 是样本 $i$ 中第 $h$ 个 housekeeping gene 的表达计数。
+其中， $C_{ig}$ 是样本 $i$ 中基因 $g$ 的表达计数， $C_{ih}$ 是样本 $i$ 中第 $h$ 个 housekeeping gene 的表达计数。
 
 ## 3 加权求和，得到最终 GEP score
 

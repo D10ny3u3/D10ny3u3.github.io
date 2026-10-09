@@ -139,11 +139,17 @@ T cell–inflamed GEP score 指第二种，即最终的加权评分。原文 Met
 
 Housekeeping normalization
 
-对每个基因的表达计数取 log⁡10\log_{10}log10，再减去该样本 11 个 housekeeping genes 的平均 log⁡10\log_{10}log10 表达值：
+对每个基因的表达计数取 $\log_{10}$，再减去该样本 11 个 housekeeping genes 的平均 $\log_{10}$ 表达值：
 
-Xig=log⁡10(Cig)−111∑h=111log⁡10(Cih)X_{ig}=\log_{10}(C_{ig})- \frac{1}{11}\sum_{h=1}^{11}\log_{10}(C_{ih})Xig=log10(Cig)−111h=1∑11log10(Cih)
+$$
+X_{ig} =
+\log_{10}(C_{ig})
+-
+\frac{1}{11}\sum_{h=1}^{11}
+\log_{10}(C_{ih})
+$$
 
-其中，CigC_{ig}Cig 是样本 iii 中基因 ggg 的表达计数。
+其中，$C_{ig}$ 是样本 $i$ 中基因 $g$ 的表达计数，$C_{ih}$ 是样本 $i$ 中第 $h$ 个 housekeeping gene 的表达计数。
 
 ## 3
 

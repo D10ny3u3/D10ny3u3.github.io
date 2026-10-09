@@ -27,11 +27,7 @@ CYT=GZMA×PRF1\mathrm{CYT}=\sqrt{\mathrm{GZMA}\times\mathrm{PRF1}}CYT=GZMA×PRF1
 
 ## 2. 这篇 JCI 文章具体怎么计算？
 
-你给出的文章在 Methods 中明确写道：使用 PRF1 和 GZMA 的 normalized read counts 的几何平均数 计算 CYT score。
-
-![](https://www.google.com/s2/favicons?domain=https://www.jci.org\&sz=32)
-
-JCI
+[https://www.jci.org/articles/view/124108]在 Methods 中明确写道：使用 PRF1 和 GZMA 的 normalized read counts 的几何平均数 计算 CYT score。
 
 因此，严格按照这篇文章的方法：
 

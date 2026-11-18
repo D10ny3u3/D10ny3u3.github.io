@@ -5,27 +5,9 @@ categories:
   - code
 tags:
   - code
-output: 
-  rmarkdown::html_document:
-    toc: true
-    toc_depth: 2
-    toc_float: true
-    theme: flatly
-    self_contained: true
-vignette: >
-  %\VignetteIndexEntry{Residual Contamination Removal in SPLIT}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(
-  message   = FALSE,
-  warning   = FALSE,
-  comment   = NA,
-  fig.align = "center"
-)
-```
+Copied from https://github.com/bdsc-tds/SPLIT/blob/main/vignettes/Run_RCTD_and_SPLIT_on_Xenium.Rmd
 
 # Introduction
 
